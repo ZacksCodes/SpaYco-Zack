@@ -76,8 +76,8 @@ body {
   list-style-position: inside;
 }
 
-@media only screen and(max-width: 600px) {
+@media only screen and (max-width: 600px) {
   #header {
-    display: block;
+    display: inline-block;
   }
 }
