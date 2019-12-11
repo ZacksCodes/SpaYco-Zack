@@ -8,14 +8,37 @@
 
   <body>
     <header id="header">
-      <img id="header-img" src="./media/vr-glasses.png" alt="vr-glass">
+      <img id="header-img" src="./media/vr-glasses.png" alt="vr-glass" />
       <nav id="nav-bar">
-        <a href="#features">Features</a>
-        <a href="#why">Why VR</a>
-        <a href="#buy">BUY NOW</a>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#why">Why VR</a>
+        <a class="nav-link" href="#buy">BUY NOW</a>
       </nav>
     </header>
-    
+
+    <div>
+      <iframe
+        id="video"
+        width="916"
+        height="515"
+        src="https://www.youtube.com/embed/fnCmUWqKo6g"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div>
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        type="GET"
+      >
+        <input type="email" id="email" placeholder="email@exemple.com" />
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
   </body>
