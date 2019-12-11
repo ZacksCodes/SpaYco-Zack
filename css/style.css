@@ -1,44 +1,83 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-html, body{
-    margin: 0;
-    padding: 0;
-    background-color: #15202B;
-    font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #15202b;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 #header {
-    position: fixed;
-    width: 100%;
-    background-color: #42586E;
-    opacity: 0.8;
-    display: grid;
-    grid-template-columns: auto auto;
+  position: fixed;
+  width: 100%;
+  background-color: #42586e;
+  opacity: 0.8;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 #header-img {
-    max-width: 150px;
-    max-height: auto;
-    position: relative;
-    left: 1%;
+  max-width: auto;
+  max-height: 100px;
+  position: relative;
+  left: 1%;
 }
 #nav-bar {
-    position: relative;
-    right: 5px;
-    display: flex;
-    text-align:right;
-    align-items: center;
-    flex-direction: row-reverse;
-
+  position: relative;
+  right: 5px;
+  display: flex;
+  text-align: right;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 #nav-bar > * {
-    padding: 10px;
-    margin: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 .nav-link {
-    text-decoration: none;
-    color: white;
-    background-color: #263A4D;
-    border: 1px solid gray;
-    border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #263a4d;
+  border: 1px solid gray;
+  border-radius: 10px;
 }
 .nav-link:hover {
-    background-color: rgb(24, 33, 43);
+  background-color: rgb(24, 33, 43);
+}
+
+#video {
+  margin-left: calc(50% - 360px);
+  margin-top: 8%;
+}
+
+#forms {
+  text-align: center;
+}
+
+#email {
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+#submit {
+  height: 25px;
+  width: 100px;
+  background-color: #15202b;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+#description {
+  text-align: center;
+}
+#description ul {
+  text-align: center;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+@media only screen and(max-width: 600px) {
+  #header {
+    display: block;
+  }
 }

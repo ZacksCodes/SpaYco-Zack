@@ -8,19 +8,23 @@
 
   <body>
     <header id="header">
-      <img id="header-img" src="https://i.imgur.com/Qoit1wM.png" alt="vr-glass" />
+      <img
+        id="header-img"
+        src="https://i.imgur.com/Qoit1wM.png"
+        alt="vr-glass"
+      />
       <nav id="nav-bar">
         <a class="nav-link" href="#video">Watch</a>
         <a class="nav-link" href="#form">Contact us</a>
-        <a id="buyBtn" class="nav-link" href="#buy">BUY NOW</a>
+        <a id="buyBtn" class="nav-link" href="#description">Why VR</a>
       </nav>
     </header>
 
     <div>
       <iframe
         id="video"
-        width="916"
-        height="515"
+        width="720"
+        height="400"
         src="https://www.youtube.com/embed/fnCmUWqKo6g"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -28,23 +32,38 @@
       ></iframe>
     </div>
 
-    <div>
+    <div id="forms">
       <p>if you need more help, contact us!</p>
       <form
         id="form"
         action="https://www.freecodecamp.com/email-submit"
         type="GET"
       >
-        <input type="email" id="email" placeholder="email@exemple.com" />
+        <input
+          name="email"
+          type="email"
+          id="email"
+          placeholder="email@exemple.com"
+          required
+        />
+        <br />
         <input type="submit" id="submit" />
       </form>
     </div>
-    <div id="buy">
-      <div></div>
-      <div></div>
-      <div></div>
+    <div id="description">
+      <h1>Why Virtual Reality ?</h1>
+      <ul>
+        <li>
+          It's fun
+        </li>
+        <li>
+          You want to have it
+        </li>
+        <li>
+          Half life alyx
+        </li>
+      </ul>
     </div>
-
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
   </body>
